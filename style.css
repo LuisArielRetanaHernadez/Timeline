@@ -30,3 +30,23 @@ ul {
   position: absolute;
   left: 50%;
 }
+
+/* Elments of list */
+
+.timeline ul li { 
+  width: 50%;
+  padding: 20px 40px;
+  position: relative;
+}
+
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  clear: both;
+}
