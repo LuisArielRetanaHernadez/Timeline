@@ -68,3 +68,38 @@ ul {
 .timeline ul li:nth-child(even)::before {
   left: -1%;
 }
+
+/* content */
+
+.content {
+  padding-bottom: 20px;
+}
+
+.timeline ul li h3 { 
+  font-weight: 600;
+  color: var(--color-main);
+}
+
+.timeline ul li p {
+  margin: 10px 0 0;
+}
+
+/* Date */
+
+.time { 
+  font-size: 14px;
+  position: absolute;
+  top: 20px;
+  padding: 8px 15px;
+  background-color: var(--color-shadown);
+  color: white;
+  border-radius: 20px;
+}
+
+.timeline ul li:nth-child(odd) .time {
+  right: -145px;
+}
+
+.timeline ul li:nth-child(even) .time {
+  left: -145px;
+}
