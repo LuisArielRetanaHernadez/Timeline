@@ -50,3 +50,21 @@ ul {
   text-align: left;
   clear: both;
 }
+
+.timeline ul li::before { 
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-main);
+  position: absolute;
+  top: 0;
+}
+
+.timeline ul li:nth-child(odd)::before {
+  right: -1%;
+}
+
+.timeline ul li:nth-child(even)::before {
+  left: -1%;
+}
